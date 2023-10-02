@@ -14,7 +14,7 @@
 
 <body>
     <!-------------- Header ----------------->
-
+    <div id="preloader"></div>
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">Atish Portfolio</a>
@@ -581,6 +581,13 @@ function sendEmail(){
     }).then(
     message=>alert(message)
     );
+    </script>
+
+    <script>
+         var loader = document.getElementById('preloader')
+    window.addEventListener("load",function(){
+        loader.style.display= "none"
+    })
     </script>
 </body>
 
